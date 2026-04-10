@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Messages</title>
+<link rel="stylesheet" href="css07appadmin.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-area">
+            <img src="logo/logoecole.png" alt="logo">
+              <h3>Complexe Scolaire </h3>
+            <h3> MASALA</h3>
+        </div>
+
+        <ul>
+            <li class="active"><a href="app03admintableau.html">📊 Tableau de bord</a></li>
+            <li><a href="app01admincontact.html">📩 Messages</a></li>
+            <li><a href="app02admininscription.html">🎓 Inscriptions</a></li>
+        </ul>
+
+        <button class="logout">🚪 Déconnexion</button>
+    </aside>
+
+    <!-- MAIN -->
+<main>
+
+    <div class="topbar">
+    <h2>Messages</h2>
+</div>
+
+<h2 class="page-title">Liste des messages reçus</h2>
+
+<div class="filters">
+    <input type="text" placeholder="🔍 Rechercher par nom">
+    <input type="date">
+</div>
+
+
+<div class="table-container">
+    <h3 class="table-title">Messages récents</h3>
+    <table>
+        <tr>
+            <th>#ID</th>
+            <th>Nom</th>
+            <th>Email</th>
+             <th>Commentaire</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+
+    <tr>
+        <td>001</td>
+        <td>Jean</td>
+        <td>jean@email.com</td>
+        <td>Bonjour, je veux des infos</td>
+        <td>2026-04-08</td>
+        <td class="actions">
+            <button class="view">👁</button>
+            <button class="delete">🗑</button>
+        </td>
+    </tr>
+
+
+        <tr>
+        <td>002</td>
+        <td>Pierre</td>
+        <td>pierre@email.com</td>
+        <td>Bonjour, je veux des infos</td>
+        <td>2026-04-08</td>
+        <td class="actions">
+            <button class="view">👁</button>
+            <button class="delete">🗑</button>
+        </td>
+    </tr>
+
+
+        <tr>
+        <td>003</td>
+        <td>MANASSE</td>
+        <td>manasse@email.com</td>
+        <td>Bonjour, je veux des infos</td>
+        <td>2026-04-08</td>
+        <td class="actions">
+            <button class="view">👁</button>
+            <button class="delete">🗑</button>
+        </td>
+    </tr>
+
+    </table>
+</div>
+
+</main>
+
+</div>
+<script src="jsappadmin.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px;
+    width: 360px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.logo h3 {
+    font-size: 13px;
+    color: #777;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Titre */
+.login-container h2 {
+    margin: 20px 0;
+    color: #111;
+}
+
+/* Inputs avec icônes */
+.inputT-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputT-group input {
+    width: 90%;
+    padding: 12px 12px 12px 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.inputT-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+/* Effet focus */
+.inputT-group input:focus {
+    border-color: #0a3554;
+    box-shadow: 0 0 5px rgba(77, 182, 172, 0.3);
+}
+
+/* Options */
+.options {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.options a {
+    font-size: 13px;
+    color: #0a3554;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #0a3554, #0a3554);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+/* Message erreur */
+#errorMsg {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* Toggle password */
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 25px;
+    }
+}

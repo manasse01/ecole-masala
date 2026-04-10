@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="css07appadmin.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-area">
+            <img src="logo/logoecole.png" alt="logo">
+            <h3>Complexe Scolaire </h3>
+            <h3> MASALA</h3>
+        </div>
+
+        <ul>
+            <li class="active"><a href="app03admintableau.html">📊 Tableau de bord</a></li>
+            <li><a href="app01admincontact.html">📩 Messages</a></li>
+            <li><a href="app02admininscription.html">🎓 Inscriptions</a></li>
+        </ul>
+
+        <button class="logout">🚪 Déconnexion</button>
+        <button type="button" onclick="window.location.href='app00login.html'">Login</button>
+    </aside>
+    
+
+
+  
+
+    <!-- MAIN -->
+<main>
+
+      <div class="topbar">
+    <h2>Tableau de bord</h2>
+</div>
+
+    <h2 class="page-title">Statistiques générales</h2>
+
+<div class="cards">
+    <div class="card">
+        <h4>Messages reçus</h4>
+        <p>10</p>
+    </div>
+
+    <div class="card">
+        <h4>Inscriptions</h4>
+        <p>80</p>
+    </div>
+
+    <div class="card">
+        <h4>Garçons</h4>
+        <p>45</p>
+    </div>
+
+    <div class="card">
+        <h4>Filles</h4>
+        <p>35</p>
+    </div>
+</div>
+
+<div class="chart-box">
+    <h3 class="table-title">Graphique des activités</h3>
+    <canvas id="chart"></canvas>
+</div>
+
+</main>
+
+</div>
+
+<script src="jsappadmin.js"></script>
+</body>
+</html

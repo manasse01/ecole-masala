@@ -1,0 +1,1091 @@
+/* ===== TOP BAR ===== */
+.top-bar {
+    background: #0a3554;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo img { width: 150px; }
+
+
+
+/* ===== l'école de l'avenir, historique, mission, objectif etc... ==------------------------------------------------=== */
+.section {
+    display: flex;
+    padding: 60px;
+    background: white;
+    align-items: center;
+}
+
+.section img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.textt {
+    margin-left: 40px;
+}
+
+.textt h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.textt p {
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;      /* aligne bien à gauche et à droite */
+    text-justify: inter-word; /* améliore la justification */
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textt {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ===== SECTION ORGANISER A L'ECOLE =-------------------------------------------------------------==== */
+.news {
+    background: #f5f5f5;
+    padding: 80px 50px;
+}
+
+.news-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background: white;
+    width: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.news-meta {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.news-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #222;
+    text-decoration: none;
+    color: #222;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.news-btn:hover {
+    background: #222;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== notre projet educatif et le section organisées voir page a propos ================page accueil==================================== */
+.services {
+    background: #f7f7f7;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.services-header .subtitle {
+    font-size: 40px;
+    font-family: cursive;
+    color: #caa86b;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.services-header h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    max-width: 300px;
+}
+
+.service-box .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #caa86b;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+
+}
+
+.service-box li {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+
+     line-height: 1.6;
+    text-align: justify;      /* aligne bien à gauche et à droite */
+    text-justify: inter-word; /* améliore la justification */
+}
+
+
+.service-box p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+/* AVANT FOOTER------------------------------------------------------------------------------------------- */
+/* FOOTER */
+.avantfooter {
+  background-color: #1e7fb8; /* bleu */
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGO */
+.avantfooter-content {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.avantfooter-content img {
+  width: 120px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* frais scolaires----------------page frais--------------------------------------------------------------------------------- */
+/* SECTION */
+.frais-scolaires {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #eef2f7, #dfe6ee);
+    text-align: center;
+}
+
+.frais-scolaires .title {
+    margin-bottom: 20px;
+    color: #1c2b39;
+}
+
+/* CONTAINER */
+.frais-scolaires .container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD PREMIUM */
+.frais-scolaires .card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    /* GLASS EFFECT */
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+/* HOVER */
+.frais-scolaires .card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+.frais-scolaires .card-header {
+    background: linear-gradient(135deg, #0b3556, #1c75bc);
+    color: white;
+    padding: 25px;
+    position: relative;
+}
+
+/* BADGE */
+.frais-scolaires .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* PRICE */
+.frais-scolaires .price {
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ICON */
+.frais-scolaires .icon {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -35px auto 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    font-size: 28px;
+    color: #1c75bc;
+}
+
+/* CONTENT */
+.frais-scolaires .content {
+    padding: 20px;
+    color: #444;
+    flex-grow: 1;
+}
+
+.frais-scolaires .content p {
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.frais-scolaires .content p:hover {
+    transform: translateX(6px);
+    color: #1c75bc;
+}
+
+/* BUTTON */
+.frais-scolaires .btn {
+    margin-top: auto;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    background: linear-gradient(135deg, #0b3556, #1c75bc);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.frais-scolaires .btn:hover {
+    letter-spacing: 1px;
+    filter: brightness(1.1);
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .frais-scolaires .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .frais-scolaires .card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Corps Professoral ------------------------page equipe------------------------------------------------------------- */
+.teachers {
+    padding: 60px 20px;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #1c2b39;
+}
+
+.teachers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.teacher-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.teacher-card:nth-child(2) { animation-delay: 0.1s; }
+.teacher-card:nth-child(3) { animation-delay: 0.2s; }
+.teacher-card:nth-child(4) { animation-delay: 0.3s; }
+.teacher-card:nth-child(5) { animation-delay: 0.4s; }
+.teacher-card:nth-child(6) { animation-delay: 0.5s; }
+.teacher-card:nth-child(7) { animation-delay: 0.6s; }
+.teacher-card:nth-child(8) { animation-delay: 0.7s; }
+
+.teacher-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.teacher-card h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #1c2b39;
+}
+
+.teacher-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* direction maternelle primaire -------------------page equipe------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section */
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f5f7fa;
+}
+
+.team-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #1f2d3d;
+  animation: fadeDown 1s ease;
+}
+
+/* Container */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Carte */
+.team-card {
+  width: 250px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  animation: fadeUp 1s ease;
+  position: relative;
+}
+
+/* Hover effet */
+.team-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.image-wrapper {
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Info */
+.info {
+  padding: 15px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.info h3 {
+  font-size: 16px;
+  color: #0d1b2a;
+  margin-bottom: 5px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Effet bande colorée au hover */
+.team-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: #007bff;
+  transition: width 0.4s ease;
+}
+
+.team-card:hover::after {
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* les administratifs---------------page equipe------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+/* Section */
+.manasse-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.manasse-section h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #1f2d3d;
+  animation: fadeDown 1s ease;
+}
+
+/* Slider */
+.roule {
+  overflow: hidden;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+/* Slides */
+.roules {
+  display: flex;
+  gap: 30px;
+  animation: scroll 12s linear infinite;
+}
+
+/* Card */
+.tof {
+  min-width: 300px;
+  position: relative;
+  animation: fadeUp 1s ease;
+}
+
+/* Image */
+.tof img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.4s ease;
+}
+
+.tof:hover img {
+  transform: scale(1.05);
+}
+
+/* Info box */
+.basango {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #eaeaea;
+  padding: 15px 25px;
+  width: 90%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.tof:hover .basango {
+  background: #1e7fb8;
+  color: white;
+}
+
+/* Texte */
+.basango h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.basango p {
+  font-size: 14px;
+  color: #555;
+}
+
+.tof:hover .basango p {
+  color: white;
+}
+
+/* Dots */
+.dotss {
+  margin-top: 60px;
+}
+
+.dotss span {
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  background: #9aa6b2;
+  margin: 5px;
+}
+
+.dotss span:nth-child(3) {
+  background: #0d1b2a;
+}
+
+/* Animations */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pause au survol */
+.roules:hover {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* préinscription-------------------------------------------------------------------------- */
+.contact-section {
+  padding: 80px 20px;
+  background: #f4f5f7;
+}
+
+/* Container */
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Formulaire */
+.contact-form {
+  flex: 1;
+  background: #e9ecef;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 15px;
+  background: #0d3b66;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button {
+  border-radius: 20px; /* arrondi doux sur les côtés */
+  padding-left: 30px;  /* plus d’espace à gauche */
+  padding-right: 30px; /* plus d’espace à droite */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Messages erreur */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Info */
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+/* Info box */
+.info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+/* Icônes */
+.iconn {
+  width: 50px;
+  height: 50px;
+  background: #0d3b66;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* MAP */
+.map {
+  margin-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Animation scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- de la maternelle au secondaire-----------------------index---------------------------------------->SECTION */
+.education-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ededee, #fefeff);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #1e2a38;
+}
+
+/* CONTAINER */
+.cardsa-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD (Glassmorphism) */
+.carda {
+  width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.368);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+/* HOVER MODERNE */
+.carda:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+.carda-header {
+  padding: 35px;
+  color: white;
+}
+
+/* COLORS */
+.red { background: linear-gradient(135deg, #8e1c2f, #c12d3f); }
+.gold { background: linear-gradient(135deg, #b8963f, #e1c062); }
+.blue { background: linear-gradient(135deg, #2b4c70, #3e6a99); }
+
+.icon {
+  font-size: 40px;
+}
+
+/* BODY */
+.carda-body {
+  padding: 25px;
+  text-align: left;
+}
+
+.carda-body h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.carda-body p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.carda-body ul {
+  list-style: none;
+}
+
+.carda-body ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* CHECK ICON */
+.carda-body ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #c7a74d;
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Delay animation */
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+/* Tablette */
+@media (max-width: 992px) {
+  .cardsa-container {
+    gap: 20px;
+  }
+
+  .carda {
+    width: 45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .carda {
+    width: 100%;
+  }
+}

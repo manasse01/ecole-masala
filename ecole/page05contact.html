@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - CS Masala</title>
+<link rel="stylesheet" href="css01style.css">
+<link rel="stylesheet" href="css02topbar.css">
+<link rel="stylesheet" href="css03footer.css">
+
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="left">
+        📍 Mont-ngafula Q.Kimbondo Av: Ngongo N°35 bis
+        📞 +243 851 738 366
+    </div>
+    <div class="right">
+        ❤️ Bienvenu dans notre Site
+    </div>
+</div>
+</head>
+
+
+<body>
+
+
+
+<header>
+     <div class="logo">
+        <img src="logo/logoecolepng.png" alt="logo">
+    </div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="page02about.html">À propos</a>
+        <a href="page03team.html">Équipe</a>
+        <a href="page04pricing.html">Tarifs</a>
+        <a href="page05contact.html">Contact</a>
+        <a href="page06preinscription.html" class="btn">Pré-inscription</a>
+    </nav>
+</header>
+
+
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<section class="contact-section">
+
+  <div class="contact-container">
+
+    <!-- FORMULAIRE -->
+    <div class="contact-form reveal">
+      <form id="contactForm">
+
+        <input type="text" id="noms" placeholder="Name*" required>
+        <small class="error"></small>
+
+        <input type="email" id="email" placeholder="Email*" required>
+        <small class="error"></small>
+
+        <textarea id="message" placeholder="ton commentaire" required></textarea>
+        <small class="error"></small>
+
+        <button type="submit">Envoyer maintenant</button>
+      </form>
+    </div>
+
+    <!-- INFOS -->
+    <div class="contact-info reveal">
+      <p class="small-title">Posez votre préoccupation</p>
+      <h2>Contact</h2>
+
+      <div class="info-box">
+        <div class="iconn"><i class="fas fa-phone"></i></div>
+        <p>+ 243 851 738 366</p>
+      </div>
+
+      <div class="info-box">
+        <div class="iconn"><i class="fas fa-envelope"></i></div>
+        <p>Info@csmasala.net</p>
+      </div>
+
+      <div class="info-box">
+        <div class="iconn"><i class="fas fa-map-marker-alt"></i></div>
+        <p>Croisement des avenues ndjuma & ngongo Q/ Kimbondo C/ Mont Ngafula</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Google Maps -->
+  <div class="map reveal">
+    <iframe 
+      src="https://www.google.com/maps?q=Mont%20Ngafula&output=embed"
+      width="100%" 
+      height="500" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+</section>
+
+
+
+<footer>
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Colonne 1 -->
+            <div class="footer-col">
+                <h3>Nos Contacts</h3>
+                <p>📍 Croisement des avenues Ngongo & Ndjuma Q. Kimbondo C. Mont Ngafula</p>
+                <p>📞 Telephone: +243 851 738 366</p>
+                <p>✉️ Info@csmasalakin.net</p>
+            </div>
+    
+            <!-- Colonne 2 -->
+            <div class="footer-col">
+                <h2>C.S. MASALA</h2>
+                <ul>
+                    <li> <a href="page01index.html">Accueil</a></li>
+                    <li><a href="page02about.html">À propos</a></li>
+                    <li><a href="page03team.html">Équipe</a></li> 
+                    <li><a href="page04pricing.html">Tarifs</a></li> 
+                    <li><a href="page05contact.html">Contact</a></li> 
+                
+                </ul>
+            </div>
+    
+            <!-- Colonne 4 -->
+            <div class="footer-col">
+                <h3>Gallery</h3>
+                <div class="gallery">
+                        <img src="eleves/mater4.png" alt="">
+                        <img src="eleves/primaire.png" alt="Salade européenne">
+                        <img src="eleves/primaire4.png" alt="Salade européenne">
+                        <img src="eleves/primaire5.png" alt="Salade européenne">
+                        <img src="eleves/primaire6.png" alt="Salade européenne">
+                        <img src="eleves/primaire7.png" alt="Salade européenne">
+        
+                </div>
+            </div>
+    
+        </div>
+    
+        <hr>
+    
+        <div class="footer-bottom">
+            <p>Copyright © cs masala all rights reserved.</p>
+            <div class="footer-links">
+                <a href="app00login.html">Administrateur</a>
+                <a href="app01admincontact.html">connexion</a>
+                <a href="page05contact.html">Contact</a>
+            </div>
+        </div>
+    
+</footer>
+
+
+
+
+<script src="jsscript.js"></script>
+</body>
+
+
+
+<script>
+// Animation au scroll
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+  reveals.forEach(el => {
+    let windowHeight = window.innerHeight;
+    let elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add('active');
+    }
+  });
+});
+
+// Validation avancée
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  let valid = true;
+
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const message = document.getElementById('message');
+
+  const errors = document.querySelectorAll('.error');
+  errors.forEach(e => e.textContent = "");
+
+  // Name
+  if (name.value.trim().length < 3) {
+    errors[0].textContent = "Nom trop court";
+    valid = false;
+  }
+
+  // Email
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.value.match(emailPattern)) {
+    errors[1].textContent = "Email invalide";
+    valid = false;
+  }
+
+  // Message
+  if (message.value.trim().length < 10) {
+    errors[2].textContent = "Message trop court";
+    valid = false;
+  }
+
+  if (valid) {
+    alert("Message envoyé avec succès !");
+    form.reset();
+  }
+});
+</script>
+
+</html>

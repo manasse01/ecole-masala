@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css06applogin.css">
+</head>
+<body>
+    
+
+
+
+
+<section class="login-section">
+    <div class="login-container">
+
+        <div class="logo">
+            <img src="logo/logoecole.png" alt="Logo école">
+            <h3>COMPLEXE SCOLAIRE<br><span>MASALA</span></h3>
+        </div>
+
+        <h2>Se Connecter</h2>
+
+        <form id="loginForm">
+
+            <div class="inputT-group">
+                <span class="icon">👤</span>
+                <input type="text" id="username" placeholder="Nom Utilisateur">
+            </div>
+
+            <div class="inputT-group">
+                <span class="icon">🔒</span>
+                <input type="password" id="password" placeholder="Mot de Passe">
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+
+            <div class="options">
+                <a href="index.html">Rentrer sur l'accueil</a>
+            </div>
+
+            <button type="submit">Se Connecter</button>
+
+            <p id="errorMsg"></p>
+
+        </form>
+
+    </div>
+</section>
+
+
+
+<script>
+
+// Afficher / cacher mot de passe
+function togglePassword() {
+    const password = document.getElementById("password");
+    password.type = password.type === "password" ? "text" : "password";
+}
+
+// Validation formulaire
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const errorMsg = document.getElementById("errorMsg");
+
+    if (username === "" || password === "") {
+        errorMsg.textContent = "Veuillez remplir tous les champs";
+        return;
+    }
+
+    if (password.length < 6) {
+        errorMsg.textContent = "Le mot de passe doit contenir au moins 6 caractères";
+        return;
+    }
+
+    errorMsg.style.color = "green";
+    errorMsg.textContent = "Connexion réussie (simulation)";
+
+    // Ici tu peux rediriger
+    // window.location.href = "dashboard.html";
+});
+</script>
+
+
+
+</body>
+</html>
