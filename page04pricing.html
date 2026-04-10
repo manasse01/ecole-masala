@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifs - CS MASALA</title>
+<link rel="stylesheet" href="css01style.css">
+<link rel="stylesheet" href="css02topbar.css">
+<link rel="stylesheet" href="css03footer.css">
+
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="left">
+        📍 Mont-ngafula Q.Kimbondo Av: Ngongo N°35 bis
+        📞 +243 851 738 366
+    </div>
+    <div class="right">
+        ❤️ Bienvenu dans notre Site
+    </div>
+</div>
+</head>
+
+<body>
+
+
+
+<header>
+     <div class="logo">
+        <img src="logo/logoecolepng.png" alt="logo">
+    </div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="page02about.html">À propos</a>
+        <a href="page03team.html">Équipe</a>
+        <a href="page04pricing.html">Tarifs</a>
+        <a href="page05contact.html">Contact</a>
+        <a href="page06preinscription.html" class="btn">Pré-inscription</a>
+    </nav>
+</header>
+
+
+<!-- L’éducation commence par votre engagement---------------------------------------------------------------------------------- -->
+<section class="pricing">
+    <h2>L’éducation commence par votre engagement</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Un paiement aujourd’hui, un avenir assuré demain.</h3>
+            <p></p>
+            <ul>
+                <li>Le paiement des frais scolaires est un acte essentiel qui garantit à chaque enfant un environnement d’apprentissage de qualité. En s’acquittant régulièrement de ces frais, les parents contribuent directement au bon fonctionnement de l’école : entretien des infrastructures, disponibilité du matériel pédagogique et encadrement efficace des élèves. C’est un investissement concret dans l’avenir académique et personnel de leurs enfants.</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Chaque contribution compte pour la réussite de votre enfant</h3>
+            <p></p>
+            <ul>
+                <li>Respecter les échéances de paiement permet également d’assurer la continuité des activités scolaires sans interruption. Lorsque les frais sont payés à temps, l’établissement peut mieux organiser ses programmes, planifier les cours et offrir un cadre stable et rassurant aux apprenants. Cela favorise la concentration des élèves et leur permet de progresser dans de bonnes conditions.</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Ensemble, construisons une éducation de qualité.</h3>
+            <p></p>
+            <ul>
+                <li>Enfin, payer les frais scolaires est une preuve d’engagement et de responsabilité parentale. Cela montre à l’enfant l’importance accordée à son éducation et renforce sa motivation à réussir. Ensemble, parents et école construisent un avenir solide, où chaque élève a la possibilité de développer pleinement son potentiel et d’atteindre ses objectifs.</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FRAIS SCOLAIRES direction maternelle------css au topbar----------------------------------------------------------------------------- -->
+<section class="frais-scolaires">
+
+    <h1 class="title">Frais Scolaires</h1>
+    <h2 class="title">Direction maternelle</h2>
+
+    <div class="container">
+
+        <!-- Carte 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">1eme Maternelle</div>
+                <h2>Maternelle</h2>
+                <div class="price">$ 350</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 100 Usd</p>
+                <p>» 1è Tranche : 150 Usd</p>
+                <p>» 2è Tranche : 100 usd</p>
+                <p>» 3è Tranche : 100 usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">2eme maternelle </div>
+                <h2>Maternelle</h2>
+                <div class="price">$ 340</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits : 100 Usd</p>
+                <p>» 1è Tranche : 140 Usd</p>
+                <p>» 2è Tranche : 100 Usd</p>
+                <p>» 3è Tranche : 100 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">3eme Maternelle</div>
+                <h2>Maternelle</h2>
+                <div class="price">$ 330</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 100 usd</p>
+                <p>» 1è Tranche : 150 Usd</p>
+                <p>» 2è Tranche : 150 Usd</p>
+                <p>» 3è Tranche : 100 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+    </div>
+
+</section>
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (top < windowHeight - 100) {
+      el.classList.add('active');
+    }
+  });
+});
+</script>
+
+
+
+
+
+<!-- AVANT FOOTER------------------------------------------------------------------------ -->
+<section class="avantfooter">
+    <div class="avantfooter-content">
+        <img src="logo/logoecole.png" alt="Logo">
+    </div>
+</section>
+
+
+
+<!-- FRAIS SCOLAIRES6-------------direction primaire-----------css au topbar----------------------------------------------------------------------------- -->
+<section class="frais-scolaires">
+
+    <h1 class="title">Frais Scolaires</h1>
+    <h2 class="title">Direction primaire</h2>
+
+    <div class="container">
+
+        <!-- Carte 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">1ere et 2eme Année</div>
+                <h2>Primaire</h2>
+                <div class="price">$ 400</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 100 Usd</p>
+                <p>» 1è Tranche : 150 Usd</p>
+                <p>» 2è Tranche : 150 usd</p>
+                <p>» 3è Tranche : 100 usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">3eme et 4eme Année</div>
+                <h2>Primaire</h2>
+                <div class="price">$ 450</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits : 100 Usd</p>
+                <p>» 1è Tranche : 200 Usd</p>
+                <p>» 2è Tranche : 150 Usd</p>
+                <p>» 3è Tranche : 100 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">5eme Année</div>
+                <h2>primaire</h2>
+                <div class="price">$ 500</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 100 usd</p>
+                <p>» 1è Tranche : 200 Usd</p>
+                <p>» 2è Tranche : 150 Usd</p>
+                <p>» 3è Tranche : 150 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 4 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">6eme Année</div>
+                <h2>primaire</h2>
+                <div class="price">$ 550</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 100 usd</p>
+                <p>» 1è Tranche : 200 Usd</p>
+                <p>» 2è Tranche : 200 Usd</p>
+                <p>» 3è Tranche : 150 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- AVANT FOOTER------------------------------------------------------------------------ -->
+<section class="avantfooter">
+    <div class="avantfooter-content">
+        <img src="logo/logoecole.png" alt="Logo">
+    </div>
+</section>
+
+
+
+<!-- FRAIS SCOLAIRES6-------------direction secondaire-----------css au topbar----------------------------------------------------------------------------- -->
+<section class="frais-scolaires">
+
+    <h1 class="title">Frais Scolaires</h1>
+    <h2 class="title">Direction secondaire</h2>
+
+    <div class="container">
+
+        <!-- Carte 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">7eme Education des bases</div>
+                <h2>secondaire</h2>
+                <div class="price">$ 550</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 150 Usd</p>
+                <p>» 1è Tranche : 200 Usd</p>
+                <p>» 2è Tranche : 150 usd</p>
+                <p>» 3è Tranche : 100 usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">8eme Education des bases</div>
+                <h2>secondaire</h2>
+                <div class="price">$ 550</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits : 150 Usd</p>
+                <p>» 1è Tranche : 200 Usd</p>
+                <p>» 2è Tranche : 150 Usd</p>
+                <p>» 3è Tranche : 100 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- FRAIS SCOLAIRES6-------------direction humanité non technique-----------css au topbar----------------------------------------------------------------------------- -->
+<section class="frais-scolaires">
+
+    <h1 class="title">Frais Scolaires</h1>
+    <h2 class="title">Direction humanités non techniques</h2>
+
+    <div class="container">
+
+        <!-- Carte 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">1 er et 2eme</div>
+                <h2>humanités</h2>
+                <div class="price">$ 600</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 150 Usd</p>
+                <p>» 1è Tranche : 250 Usd</p>
+                <p>» 2è Tranche : 200 usd</p>
+                <p>» 3è Tranche : 150 usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">3eme et 4eme</div>
+                <h2>secondaire</h2>
+                <div class="price">$ 650</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits : 150 Usd</p>
+                <p>» 1è Tranche : 300 Usd</p>
+                <p>» 2è Tranche : 250 Usd</p>
+                <p>» 3è Tranche : 100 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- FRAIS SCOLAIRES6-------------direction humanité technique-----------css au topbar----------------------------------------------------------------------------- -->
+<section class="frais-scolaires">
+
+    <h1 class="title">Frais Scolaires</h1>
+    <h2 class="title">Direction humanités techniques</h2>
+
+    <div class="container">
+
+        <!-- Carte 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">1 er et 2eme</div>
+                <h2>humanités</h2>
+                <div class="price">$ 600</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits: 200 Usd</p>
+                <p>» 1è Tranche : 250 Usd</p>
+                <p>» 2è Tranche : 200 usd</p>
+                <p>» 3è Tranche : 150 usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="badge">3eme et 4eme</div>
+                <h2>secondaire</h2>
+                <div class="price">$ 650</div>
+            </div>
+
+            <div class="icon">📘</div>
+
+            <div class="content">
+                <p>» Frais Connexes & Forfaits : 250 Usd</p>
+                <p>» 1è Tranche : 300 Usd</p>
+                <p>» 2è Tranche : 250 Usd</p>
+                <p>» 3è Tranche : 100 Usd</p>
+            </div>
+
+            <button class="btn">Payer par voie Bancaire</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<footer>
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Colonne 1 -->
+            <div class="footer-col">
+                <h3>Nos Contacts</h3>
+                <p>📍 Croisement des avenues Ngongo & Ndjuma Q. Kimbondo C. Mont Ngafula</p>
+                <p>📞 Telephone: +243 851 738 366</p>
+                <p>✉️ Info@csmasalakin.net</p>
+            </div>
+    
+            <!-- Colonne 2 -->
+            <div class="footer-col">
+                <h2>C.S. MASALA</h2>
+                <ul>
+                    <li> <a href="page01index.html">Accueil</a></li>
+                    <li><a href="page02about.html">À propos</a></li>
+                    <li><a href="page03team.html">Équipe</a></li> 
+                    <li><a href="page04pricing.html">Tarifs</a></li> 
+                    <li><a href="page05contact.html">Contact</a></li> 
+                
+                </ul>
+            </div>
+    
+            <!-- Colonne 4 -->
+            <div class="footer-col">
+                <h3>Gallery</h3>
+                <div class="gallery">
+                        <img src="eleves/mater4.png" alt="">
+                        <img src="eleves/primaire.png" alt="Salade européenne">
+                        <img src="eleves/primaire4.png" alt="Salade européenne">
+                        <img src="eleves/primaire5.png" alt="Salade européenne">
+                        <img src="eleves/primaire6.png" alt="Salade européenne">
+                        <img src="eleves/primaire7.png" alt="Salade européenne">
+        
+                </div>
+            </div>
+    
+        </div>
+    
+        <hr>
+    
+        <div class="footer-bottom">
+            <p>Copyright © cs masala all rights reserved.</p>
+            <div class="footer-links">
+                <a href="app00login.html">Administrateur</a>
+                <a href="app01admincontact.html">connexion</a>
+                <a href="page05contact.html">Contact</a>
+            </div>
+        </div>
+    
+</footer>
+
+<script src="jsscript.js"></script>
+</body>
+</html>

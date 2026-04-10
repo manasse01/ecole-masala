@@ -1,0 +1,258 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 75%;
+    margin: 40px auto;
+    padding: 25px;
+    background: #f9f9f9;
+    border: 2px solid #0a3554;
+    border-radius: 15px;
+}
+
+h2, h3 {
+    color: #0a3554;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row input,
+.row select {
+    width: 100%;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 2px solid #0a3554;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group label {
+    font-size: 14px;
+}
+
+button {
+    background: #0a3554;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0a3554;
+}
+
+/* Quand l'utilisateur écrit dans un champ */
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: #0a3554;
+    background-color: #eaf3ff;
+}
+
+/* Effet quand on clique dans le champ */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0a3554;
+    box-shadow: 0 0 5px rgba(22, 119, 201, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION */
+.demo-tech {
+    padding: 60px 20px;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER (TAILLE FIXE + CENTRÉ) */
+.header-box {
+    width: 700px;
+    background: linear-gradient(135deg, #1d3ea6, #0d2c7a);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeDown 1s ease;
+}
+
+/* ICON CENTRÉ */
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* TEXTE CENTRÉ */
+.header-box h1,
+.header-box p {
+    text-align: center;
+}
+
+/* CARD (SUPERPOSÉ COMME IMAGE) */
+.card-box {
+    width: 550px;
+    background: white;
+    margin-top: -40px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    animation: fadeUp 1s ease;
+}
+
+/* TITRES */
+.card-box h2,
+.card-box h3,
+.card-box p {
+    text-align: center;
+}
+
+/* INFO BOX */
+.info-box {
+    background: #eef3ff;
+    border-left: 4px solid #1d3ea6;
+    padding: 12px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* LISTE CENTRÉE */
+ul {
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* BOUTONS CENTRÉS */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* WhatsApp */
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+/* Email */
+.email {
+    border: 1px solid #1d3ea6;
+    color: #1d3ea6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .header-box {
+        width: 95%;
+    }
+
+    .card-box {
+        width: 95%;
+        margin-top: -25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
